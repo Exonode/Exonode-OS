@@ -1,5 +1,4 @@
 @echo off
-:Secure
 echo This file is a login handler.
 echo.
 echo Your access is denied.
