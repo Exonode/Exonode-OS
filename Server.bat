@@ -9,7 +9,7 @@ Title [Exonode-OS] [Beta-0.0.01]
   )
 ) || (
   >nul find "SubUser2=Kevin" Login.cmd && (
-      >nul find "SubUser2Pass=DevPW" Login.cmd && (
+      >nul find "SubUser2Pass=devPW" Login.cmd && (
 	      goto MyLogin
 	  ) || (
 	      goto MissingLogin
