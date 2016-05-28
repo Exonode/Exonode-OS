@@ -1,5 +1,5 @@
-rem Boo Hoo
 @echo off
+rem Boo Hoo
 Title [Exonode-OS] [Beta-0.0.01]
 SET sysDir=\SysDir
 SET progDir=\progDir
