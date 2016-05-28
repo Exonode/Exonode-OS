@@ -1,7 +1,24 @@
 @echo off
 rem Boo Hoo
 Title [Exonode-OS] [Beta-0.0.01]
-SET userCwd=find "Admin" Login.cmd (    find "password123" Login.cmd ) || (    goto myLogin    ) || (     goto MissingLogin    )
+>nul find "SubUser1=Admin" Login.cmd && (
+  >nul find "SubUser1Pass=password123" Login.cmd && (
+      goto MyLogin
+  ) || (
+      goto MissingLogin
+  )
+) || (
+  >nul find "SubUser2=Dev" Login.cmd && (
+      >nul find "SubUser2Pass=dev2" Login.cmd && (
+	      goto MyLogin
+	  ) || (
+	      goto MissingLogin
+	  )
+  ) || (
+      goto MissingLogin
+  )
+)
+
 :Login
 rem Oh Look a login
 if exist Login.cmd (
@@ -20,4 +37,8 @@ goto PauseLoop
 
 :PauseLoop
 pause>nul
+goto PauseLoop
+
+:MyLogin
+echo 4
 goto PauseLoop
