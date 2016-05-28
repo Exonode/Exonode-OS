@@ -1,5 +1,14 @@
-SubUser1=Admiy
-SubUser1Pass=password124
+@echo off
+:Secure
+echo This file is a login handler.
+echo.
+echo Your access is denied.
+exit
 
-SubUser2=Div
-SubUser2Pass=dwv2
+rem SUBUSER1
+SubUser1=Admin
+SubUser1Pass=password123
+
+rem SUBUSER2
+SubUser2=Dev
+SubUser2Pass=dev2
