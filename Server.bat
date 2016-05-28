@@ -8,8 +8,8 @@ Title [Exonode-OS] [Beta-0.0.01]
       goto MissingLogin
   )
 ) || (
-  >nul find "SubUser2=Dev" Login.cmd && (
-      >nul find "SubUser2Pass=dev2" Login.cmd && (
+  >nul find "SubUser2=Kevin" Login.cmd && (
+      >nul find "SubUser2Pass=DevPW" Login.cmd && (
 	      goto MyLogin
 	  ) || (
 	      goto MissingLogin
