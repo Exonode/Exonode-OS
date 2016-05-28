@@ -9,5 +9,5 @@ SubUser1=Admin
 SubUser1Pass=password123
 
 rem SUBUSER2
-SubUser2=Dev
-SubUser2Pass=dev2
+SubUser2=Kevin
+SubUser2Pass=devPW
