@@ -1,13 +1,11 @@
 @echo off
 rem Boo Hoo
 Title [Exonode-OS] [Beta-0.0.01]
-SET sysDir=\SysDir
-SET progDir=\progDir
-SET cmdDir=\cmdDir
+SET userCwd=find "Admin" Login.cmd (    find "password123" Login.cmd ) || (    goto myLogin    ) || (     goto MissingLogin    )
 :Login
 rem Oh Look a login
 if exist Login.cmd (
-    rem Want it to exist for now
+    %userCwd%
 ) else (
     goto MissingLogin
 )
